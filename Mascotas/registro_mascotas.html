@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">    
+    <title>Usuario</title>
+    <link rel="website icon" href="/images/navicon.png.png" type="png">
+    <link rel="stylesheet" href="/Mascotas/style.css">
+</head>
+
+<body>
+
+    <head>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mt-0" href="/cliente/index.html"><img src="" alt=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="20" viewBox="0 0 320 512"><path fill="#000000" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mx-1" id="boton-menu"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">"Nombre de Usuario"</h5>
+                        <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="/Usuario/datos_personales.html">Datos personales</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Compras</a>
+                  </li> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mascotas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Mascotas/registro_mascotas.html">Nueva mascota</a></li>
+                                    <li><a class="dropdown-item" href="/Cliente/tusMascotas.html">Tus mascotas</a></li>
+                                    <!-- <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </head>
+
+    <main class="main_mascotas">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h1>Registro de mascotas</h1>
+                <label for="nombre">Nombre mascota</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="nombre_mascota"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="16" width="16" viewBox="0 0 512 512">
+                            <path fill="#000000"
+                                d="M226.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5s.3-86.2 32.6-96.8s70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3S-2.7 179.3 21.8 165.3s59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5v1.6c0 25.8-20.9 46.7-46.7 46.7c-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2C84.9 480 64 459.1 64 433.3v-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3s29.1 51.7 10.2 84.1s-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5s46.9 53.9 32.6 96.8s-52.1 69.1-84.4 58.5z" />
+                        </svg></span>
+                    <input type="text" class="form-control" aria-label="nombre mascota" id="nombreMascota" required>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <label for="raza">Raza</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="raza"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="M194-80v-395h80v315h280v-193l105-105q29-29 45-65t16-77q0-40-16.5-76T659-741l-25-26-127 127H347l-43 43-57-56 67-67h160l160-160 82 82q40 40 62 90.5T800-600q0 57-22 107.5T716-402l-82 82v240H194Zm197-187L183-475q-11-11-17-26t-6-31q0-16 6-30.5t17-25.5l84-85 124 123q28 28 43.5 64.5T450-409q0 40-15 76.5T391-267Z" />
+                        </svg></span>
+                    <input type="text" class="form-control" aria-label="raza" id="razaMascota">
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <label for="peso">Peso (Kg)</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="peso"><svg xmlns="http://www.w3.org/2000/svg" height="16"
+                            width="16" viewBox="0 0 512 512">
+                            <path fill="#000000"
+                                d="M128 176a128 128 0 1 1 256 0 128 128 0 1 1 -256 0zM391.8 64C359.5 24.9 310.7 0 256 0S152.5 24.9 120.2 64H64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H391.8zM296 224c0-10.6-4.1-20.2-10.9-27.4l33.6-78.3c3.5-8.1-.3-17.5-8.4-21s-17.5 .3-21 8.4L255.7 184c-22 .1-39.7 18-39.7 40c0 22.1 17.9 40 40 40s40-17.9 40-40z" />
+                        </svg></span>
+                    <input type="text" class="form-control" aria-label="peso" id="pesoMascota">
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <label for="fecha nacimiento">Fecha nacimiento</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="fecha_nacimiento"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="16" width="14" viewBox="0 0 448 512">
+                            <path fill="#000000"
+                                d="M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z" />
+                        </svg></span>
+                    <input type="date" class="form-control" aria-label="fecha nacimiento" id="fecha_nacimientoMascota">
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <label for="username">Username</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="username"><svg xmlns="http://www.w3.org/2000/svg" height="16"
+                            width="14" viewBox="0 0 448 512">
+                            <path fill="#000000"
+                                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                        </svg></span>
+                    <input type="text" class="form-control" aria-label="username" id="usernameMascota" disabled>
+                </div>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <label for="especie">Especie</label>
+                <form action="" id="especieMascota">
+                    <select class="form-select" name="" id="especieMascota" required>
+                        <option value="0">Canino</option>
+                        <option value="1">Felino</option>
+                        <option value="2">Otros</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <label for="sexo">Sexo</label>
+                <form action="" id="sexoMascota">
+                    <select class="form-select" name="" id="sexoMascota" required>
+                        <option value="0">Macho</option>
+                        <option value="1">Hembra</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <label for="vacunacion">Vacunación</label>
+                <form action="" id="vacunacionMascota">
+                    <select class="form-select" name="">
+                        <option value="0">No</option>
+                        <option value="1">Si, todas</option>
+                        <option value="2">Sólo Rabia</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="mt-3"></div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <label for="Tipo_alimentacion">Tipo de alimentación</label>
+                <form action="" id="tipo_alimentacionMascota">
+                    <select class="form-select" name="">
+                        <option value="0">Concentrado</option>
+                        <option value="1">Casera</option>
+                        <option value="2">Ambas</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <label for="tipo_vivienda">Tipo de vivienda</label>
+                <form action="" id="tipo_viviendaMascota">
+                    <select class="form-select" name="">
+                        <option value="0">Casa</option>
+                        <option value="1">Apartamento</option>
+                        <option value="2">Finca</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <label for="desparasitacion">Desparasitación</label>
+                <form action="" id="desparasitacionMascota">
+                    <select class="form-select" name="">
+                        <option value="0">No</option>
+                        <option value="1">Si</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="mt-3"></div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <label for="alergias">Alérgico a algún medicamento?</label>
+                <form action="" id="alergiasMascota">
+                    <select class="form-select" name="">
+                        <option value="0">No</option>
+                        <option value="1">Si</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <label for="floatingTextarea2">Cual?</label>
+                <textarea class="form-control" id="cual" style="height: 100px"></textarea>
+            </div>
+
+            <div class="mt-5"></div>
+
+            <div class="d-grid gap-2">
+                <button onclick="registro_mascotas()" class="btn btn-primary" type="submit">Guardar</button>
+              </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="/Mascotas/src.js"></script>
+</body>
+
+</html>

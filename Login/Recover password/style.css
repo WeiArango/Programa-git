@@ -1,0 +1,32 @@
+#acceso {
+    position: absolute;
+    top: 50px;
+    right: 0;     
+}
+
+body {
+    background: #000000;  
+    background: -webkit-linear-gradient(to top, #434343, #000000);  
+    background: linear-gradient(to top, #434343, #000000);  
+}
+
+.container {    
+    height: 800px;
+    padding: auto;   
+    padding-top: 100px;      
+    text-align: center;
+    color: white; 
+    
+} 
+
+@media(min-width: 800px) and (max-width: 1200px) {
+    .container {
+        width: 75%;
+    }    
+}
+
+@media(min-width: 1200px) {
+    .container {
+        width: 40%;
+    }    
+}

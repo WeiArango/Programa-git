@@ -1,0 +1,75 @@
+body {
+    background: #000000;  
+    background: -webkit-linear-gradient(to top, #434343, #000000);  
+    background: linear-gradient(to top, #434343, #000000);  
+    height: 100vh; 
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../Formatos Fonts/Roboto-Black.ttf");
+} 
+
+
+.offcanvas-header,
+.offcanvas-body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* -------------------------------SECCIÓN DATOS PERSONALES---------------------- */
+.main_datos_personales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    color: aliceblue;
+    position: relative;
+    top: 10%;    
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px){
+    .main_datos_personales{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        color: aliceblue;
+        position: relative;
+        top: 10%;    
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media(200px<= height <= 650px){
+    .main_datos_personales{
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        color: aliceblue;
+        position: relative;
+        top: 20%;    
+        width: 50%;
+        margin: 0 auto;     
+    }
+}
+
+
+
+/* .footer{
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-size: small;
+    left: 30%;
+    right: 30%;
+    bottom: 2%;
+} */
+
+
+
+

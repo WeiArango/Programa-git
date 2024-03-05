@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>Tus mascotas</title>
+    <link rel="website icon" href="/images/navicon.png.png" type="png">
+    <link rel="stylesheet" href="/cliente/style.css">
+
+
+
+</head>
+
+<body>
+
+    <head>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mt-0" href="/cliente/index.html"><img src="" alt=""><svg xmlns="http://www.w3.org/2000/svg" height="30" width="20" viewBox="0 0 320 512"><path fill="#000000" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mx-1" id="boton-menu"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">"Nombre de Usuario"</h5>
+                        <button type="button" class="btn-close me-2" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="/Usuario/datos_personales.html">Datos personales</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                      <a class="nav-link" href="#">Compras</a>
+                    </li> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mascotas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Mascotas/registro_mascotas.html">Nueva
+                                            mascota</a></li>
+                                    <li><a class="dropdown-item" href="/Cliente/tusMascotas.html">Tus mascotas</a></li>
+                                    <!-- <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </head>
+
+    <main class="mainTusMascotas">
+        <h1 class="titleTusMascotas">Tus Mascotas</h1>
+        <table class="table table-dark table-hover table-striped" id="tablaTusMascotas">
+            <thead>
+                <tr>
+                    <th scope="col">id Mascota</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Especie</th>
+                    <th scope="col">Raza</th>
+                    <th scope="col">Edad_Años</th>
+                    <th scope="col">Sexo</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">EJEMPLO1</th>
+                    <td>KIRA</td>
+                    <td>CANINO</td>
+                    <td>PASTOR ALEMÁN</td>
+                    <td>10</td>
+                    <td>HEMBRA</td>                    
+                </tr>
+                <tr>
+                    <th scope="row">EJEMPLO2</th>
+                    <td>RAMÓN</td>
+                    <td>FELINO</td>
+                    <td>PERSA</td>
+                    <td>12</td>
+                    <td>MACHO</td>                    
+                </tr>
+                <tr>
+                    <th scope="row">EJEMPLO3</th>
+                    <td>TADEO</td>
+                    <td>OTROS</td>
+                    <td>LORO</td>
+                    <td>1</td>
+                    <td>MACHO</td>                    
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/cliente/src.js"></script>
+</body>
+
+</html>

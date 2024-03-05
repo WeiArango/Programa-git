@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">     
+    <link rel="stylesheet" href="/Login/Create account/style.css">
+    
+    <title>Create account</title>
+    <link rel="website icon" href="/images/navicon.png.png" type="png">
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary-dark">
+        <div class="container-navbar ">
+          <a class="navbar-brand" href="#">
+            <img src="/images/navicon.png.png" alt="virtualvet" id="navicono">
+          </a>
+        </div>
+        <button onclick="cuenta()" type="button" class="btn btn-light" id="btn_cuenta">¿Ya tienes una cuenta?</button>
+      </nav>
+
+
+    <div class="container mb-3">
+        <img src="/images/Logo.png" alt="">
+        <div class="row">          
+
+            <div class="col-sx-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <form action="enviar.HTML" method="get">
+                    <div class="d-grid gap-2">
+                        <div class="mb-3"></div>
+                        <button onclick="google()" type="button" class="btn btn-light" id="btnGoogle">
+                            <a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 488 512"><style>svg {fill: #000000}</style><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+                            </svg>
+                            </a> Sign up with Google
+                         </button>
+                    </div>
+                        <div class="mb-3"></div>
+
+                    <div class="d-grid gap-2">
+                        <button onclick="facebook()" type="button" class="btn btn-light" id="btnFacebook">
+                            <a href="#" class="icon-link"><svg xmlns="http://www.w3.org/2000/svg" height="1em"viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                            </svg>
+                            </a> Sign up with Facebook
+                        </button>
+                    </div>
+                        <div class="mb-3"></div>
+
+                    <label for="">Create your account</label>
+                    <div class="mb-3"></div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+                        </span>                            
+                        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                    </div>        
+                        <div class="mb-3"></div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon4"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg></span>
+                        <input type="password" class="form-control" id="pass" name="pass" placeholder="Your Password" required>
+                    </div>
+                        <div class="mb-3"></div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon5"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg></span>
+                        <input type="password" class="form-control" id="confirmPass" name="confirmPass" placeholder="Repeat Password" required>
+                    </div>                     
+                       
+                        <div class="mb-3"></div>
+
+                    <div class="d-grid gap-2">
+                        <button onclick="signUp()" type="button" class="btn btn-primary" id="btnSignUp">Sign up</button>                        
+                    </div>
+
+                        <div class="mb-3"></div>
+                             
+                            <p class="aceptar" style="color: aliceblue; font-family: 'Roboto', sans-serif; font-size: 0.6rem; text-align: center;">Al continuar, aceptas recibir llamadas, mensajes de WhatsApp o SMS, incluso por medios automatizados, de VirtualVet y sus filiales en el número proporcionado.</p>
+                </form>            
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-group dropstart" id="acceso">  
+        
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="true"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm161.5-86.1c-12.2-5.2-26.3 .4-31.5 12.6s.4 26.3 12.6 31.5l11.9 5.1c17.3 7.4 35.2 12.9 53.6 16.3v50.1c0 4.3-.7 8.6-2.1 12.6l-28.7 86.1c-4.2 12.6 2.6 26.2 15.2 30.4s26.2-2.6 30.4-15.2l24.4-73.2c1.3-3.8 4.8-6.4 8.8-6.4s7.6 2.6 8.8 6.4l24.4 73.2c4.2 12.6 17.8 19.4 30.4 15.2s19.4-17.8 15.2-30.4l-28.7-86.1c-1.4-4.1-2.1-8.3-2.1-12.6V235.5c18.4-3.5 36.3-8.9 53.6-16.3l11.9-5.1c12.2-5.2 17.8-19.3 12.6-31.5s-19.3-17.8-31.5-12.6L338.7 175c-26.1 11.2-54.2 17-82.7 17s-56.5-5.8-82.7-17l-11.9-5.1zM256 160a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>           
+        </button>       
+                
+            <ul class="dropdown-menu bg-dark">
+                <li class="dropdown">
+                    <button type="button" class="btn btn-light ms-3" id="buttonContraste1">Contraste +
+                    <i class="icon-link"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 500 512"><<style>svg{fill:#000000}</style><path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+                    </i> 
+                    </button>                 
+                
+                     <div class="mb-2"></div>
+                
+                    <button type="button" class="btn btn-light ms-3" id="buttonContraste2">Contraste --
+                    <i class="icon-link"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#000000}</style><path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+                    </i> 
+                    </button>                  
+
+                    <div class="mb-2"></div>             
+               
+                    <button type="button" class="btn btn-light ms-3" id="buttonAumentar"> Texto ++++
+                    <i class="icon-link"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 500 512"><style>svg{fill:#000000}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM184 296c0 13.3 10.7 24 24 24s24-10.7 24-24V232h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H232V120c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>
+                    </i> 
+                    </button>                  
+
+                    <div class="mb-2"></div>              
+                
+                    <button type="button" class="btn btn-light ms-3" id="buttonReducir"> Texto ------
+                    <i class="icon-link"><svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 500 512"><style>svg{fill:#000000}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM136 184c-13.3 0-24 10.7-24 24s10.7 24 24 24H280c13.3 0 24-10.7 24-24s-10.7-24-24-24H136z"/></svg>
+                    </i> 
+                    </button>                     
+            </li>
+        </ul>      
+    </div>   
+
+    <footer class="footer px-5">
+        <div class="footer-container footer-container-top">
+            <div class="footer-logo-section">                
+                <div class="newsletter-section">
+                    <h2 class="newsletter-tittle" style="color: white;">VirtualVet</h2>
+                    <p class="newsletter-description" style="color: white;">Descripción de la aplicación</p>
+                    <a href="#" class="newsletter-subscribe-link" style="color: white;">Link descarga de la app</a>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="footer-links-section" style="color: white;">
+                <div class="row">
+                    <div class="col-sx-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <h3 class="footer-links-tittle">Compañia</h3>
+                        <ul class="footer-list">
+                            <li class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Quienes somos</a>                        
+                            </li>   
+                            <li class="#" class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Que ofrecemos</a>
+                            </li>  
+                            <li class="#" class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Seguridad</a>
+                            </li>                
+                        </ul>
+                    </div>
+
+                    <div class="col-sx-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <h3 class="footer-links-tittle">Plataforma</h3>
+                        <ul class="footer-list">
+                            <li class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Desarrollador</a>                        
+                            </li>   
+                            <li class="#" class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Socios</a>
+                            </li> 
+                            <li class="#" class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Privacidad</a>
+                            </li>                                 
+                        </ul>
+                    </div>
+
+                    <div class="col-sx-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <h3 class="footer-links-tittle">Soporte</h3>
+                        <ul class="footer-list">
+                            <li class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Documentos</a>                        
+                            </li>   
+                            <li class="#" class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Comunidad</a>
+                            </li>   
+                            <li class="#" class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Mapa del sitio</a>
+                            </li>                               
+                        </ul>
+                    </div>
+
+                    <div class="col-sx-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <h3 class="footer-links-tittle">Contacto</h3>
+                        <ul class="footer-list">
+                            <li class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">-------</a>                        
+                            </li>   
+                            <li class="#" class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">-------</a>
+                            </li>            
+                            <li class="footer-link-item">
+                                <a href="#" class="footer-link" style="color: white;">Términos</a>                        
+                            </li>                      
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="footer-bottom">
+                <div class="footer-container footer-container-bottom">
+                    <ul class="footer-list footer-list-secondary" style="color: white;">
+                        <li class="footer-footer">© 2023 VirtualVet, Inc.</li>                        
+                    </ul>                                                           
+                </div>
+            </div>            
+        </div>
+    </footer>
+
+           
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>     
+    <script src="/Login/Create account/src.js"></script> 
+     
+  
+</body>
+
+</html>
